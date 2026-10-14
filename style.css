@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font: 16px Arial, sans-serif;
+}
+
+#menu {
+  height: 40px;
+  background: #222;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu > ul > li {
+  position: relative;
+  float: left;
+}
+
+#menu a {
+  display: block;
+  min-width: 110px;
+  padding: 0 20px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#menu a:hover,
+#menu a:focus-visible {
+  background: red;
+}
+
+#menu ul ul {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #222;
+  visibility: hidden;
+}
+
+#menu li:hover > ul,
+#menu li:focus-within > ul {
+  visibility: visible;
+}
